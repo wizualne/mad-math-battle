@@ -76,48 +76,6 @@ function ScoreMode() {
         setOperation(generateNum(1, 4));
         ref.current?.restart();
     
-       
-      //powtarzajace sie funckje - do refaktoru
-    
-      // switch (operation) {
-      //   case 1:
-      //     setFirstNum(generateNum(1, 100));
-      //     setSecondNum(generateNum(1, 100));
-      //     setCorrectNum(firstNum + secondNum);
-      //     break;
-      //   case 2:
-      //     setFirstNum(generateNum(1, 100));
-      //     setSecondNum(generateNum(1, 100));
-      //     setCorrectNum(firstNum - secondNum);
-      //     break;
-      //   case 3:
-      //     setFirstNum(generateNum(1, 20));
-      //     setSecondNum(generateNum(1, 20));
-      //     setCorrectNum(firstNum * secondNum);
-      //     break;
-      //   default:
-      //     setCorrectNum(firstNum + secondNum);
-      // }
-      // const scores = [];
-      // scores.push(correctNum);
-
-      // for (let index = 0; index < 3; index++) {
-      //   if (operation === 2) {
-      //     scores.push(generateNum(-300, 300));
-      //   } else if (operation === 3) {
-      //     scores.push(generateNum(1, 400));
-      //   } else {
-      //     scores.push(generateNum(1, 300));
-      //   }
-      // }
-      // const shuffled = scores
-      //   .map((value) => ({ value, sort: Math.random() }))
-      //   .sort((a, b) => a.sort - b.sort)
-      //   .map(({ value }) => value);
-
-      // setAllScores(shuffled);
-      // //
-    
     } else {
       //END GAME
       history("/end", { state: { score } });
